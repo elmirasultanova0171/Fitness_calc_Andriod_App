@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.fitness_calc.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_BMI_Calc"
+            app:destination="@id/BMI_Calc" />
+        <action
+            android:id="@+id/action_home2_to_protein_creatine_calc"
+            app:destination="@id/protein_creatine_calc" />
+        <action
+            android:id="@+id/action_home2_to_inputCal"
+            app:destination="@id/inputCal" />
+    </fragment>
+    <fragment
+        android:id="@+id/BMI_Calc"
+        android:name="com.example.fitness_calc.BMI_Calc"
+        android:label="fragment_b_m_i__calc"
+        tools:layout="@layout/fragment_b_m_i__calc" >
+        <action
+            android:id="@+id/action_BMI_Calc_to_inputCal"
+            app:destination="@id/inputCal" />
+    </fragment>
+    <fragment
+        android:id="@+id/protein_creatine_calc"
+        android:name="com.example.fitness_calc.protein_creatine_calc"
+        android:label="fragment_protein_creatine_calc"
+        tools:layout="@layout/fragment_protein_creatine_calc" />
+    <fragment
+        android:id="@+id/calorie_calc"
+        android:name="com.example.fitness_calc.calorie_calc"
+        android:label="fragment_calorie_calc"
+        tools:layout="@layout/fragment_calorie_calc" />
+    <fragment
+        android:id="@+id/inputCal"
+        android:name="com.example.fitness_calc.inputCal"
+        android:label="fragment_input_cal"
+        tools:layout="@layout/fragment_input_cal" >
+        <action
+            android:id="@+id/action_inputCal_to_calorie_calc"
+            app:destination="@id/calorie_calc" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fitness_calc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_bmi_score">Normal BMI score ranges from 18.5 to 24.9</string>
+    <string name="info2">The dosage described above is for daily intake.Taking more than recommended Protein or Creatine could be harmful.</string>
+</resources>
